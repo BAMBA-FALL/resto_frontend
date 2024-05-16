@@ -1,0 +1,209 @@
+.header {
+  /* background-color: #ffffff; */
+  background-color: #ccc;
+  color: #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  border-bottom: 0.1px  gray;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px;
+  padding: 0;
+}
+
+.header nav ul li {
+  margin: 0 15px;
+}
+
+.header nav ul li:first-child {
+  margin-right: auto;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #0e0d0d;
+  font-weight: normal;
+}
+
+.header nav ul li a:hover {
+  color: #6490c2;
+}
+
+body {
+  margin-top: 70px;
+}
+
+.input-search {
+  border-radius: 5px;
+  width: 450px;
+  height: 30px;
+  border: 1px solid gray;
+}
+
+/* Ajoutez ces styles à votre fichier CSS */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px; 
+  color: gray; 
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-search {
+  padding-right: 30px; 
+}
+
+
+/* Styles pour les écrans de petite taille (mobile) */
+@media screen and (max-width: 480px) {
+  .input-search {
+    width: calc(100% - 10px);
+  }
+
+  .menu-icon {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-list.open {
+    flex-direction: row;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px; 
+    left: 0; 
+    width: 100%;
+    background-color: #b78686;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-list.open li {
+    margin: 10px 0;
+  }
+
+  .menu-list.open li:first-child {
+    margin-top: 0;
+  }
+
+  .menu-list.open li:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu-list.open li a:hover {
+    color: #6490c2;
+  }
+}
+
+
+.cart-icon-container {
+  position: relative;
+  display: inline-block;
+  align-items: center;
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  background-color: green;
+  color: white;
+  padding: 6px;
+  border-radius: 50%;
+  width: 18px; 
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/* Configuration du menu "Tous nos produits" */
+.category-menu {
+  position: relative;
+  margin: 10px; 
+}
+
+.category-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* .category-button:hover {
+  background-color: #0056b3;
+} */
+
+/* Menu déroulant vertical */
+.vertical-menu {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.category-menu.open .vertical-menu {
+  display: block; 
+}
+
+.vertical-menu ul {
+  list-style: none;
+  padding: 10px; 
+  margin: 0;
+}
+
+.vertical-menu li {
+  padding: 10px;
+}
+
+.vertical-menu a {
+  text-decoration: none;
+  color: black;
+}
+
+.vertical-menu a:hover {
+  color: #007bff;
+}
+
+/* Sous-menu pour les parentCategory */
+.menu-item {
+  position: relative; 
+}
+
+.submenu {
+  display: none; 
+  position: absolute;
+  top: 0;
+  left: 100%; 
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}

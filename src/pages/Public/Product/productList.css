@@ -1,0 +1,123 @@
+/* 
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+  margin-top: 5px;
+}
+
+.product-card {
+  width: 250px; 
+  height: 350px;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(213, 207, 207, 0.1);
+  transition: box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-item {
+  margin: 5px 0;
+  font-size: 15px;
+} */
+
+
+/* styles.css */
+
+/* styles.css */
+/* styles.css */
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+  margin-top: 5px;
+  height: 500px;
+}
+
+.product-card {
+  width: calc(45% - 20px); /* Calcule la largeur en pourcentage pour que deux cartes s'affichent sur une ligne */
+  max-width: 600px; /* Augmente la largeur maximale de chaque carte */
+  height: 450px; /* Augmente la hauteur de chaque carte */
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.2s;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(213, 207, 207, 0.1);
+  transition: box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit; 
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.product-card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%; 
+  height: auto; 
+  border-radius: 5px; 
+}
+
+.product-details {
+  padding: 10px;
+}
+
+.product-item {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+/* Media query pour ajuster la taille des cartes en fonction de la largeur de l'écran */
+@media screen and (max-width: 768px) {
+  .product-card {
+    width: calc(100% - 20px); /* Une carte par ligne sur les écrans plus petits que 768px */
+  }
+}
+
+
+.button-containerr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deletes-button {
+  background-color: red;
+  color: white;
+}
+
+.views-button {
+  background-color: green;
+  color: white;
+}

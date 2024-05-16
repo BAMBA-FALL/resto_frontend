@@ -1,0 +1,24 @@
+/* .sidebar {
+    width: 250px;
+    height: calc(100vh - 60px);
+    background-color: #ca59593a;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    z-index: 1000;
+  }
+  .sidebar-item {
+    margin-bottom: 10px;
+  }
+   */
+
+  /* .sidebar {
+    grid-column: 1; 
+    grid-row: 2 / span 2; 
+    background-color: #ca59593a;
+    height: calc(100vh - 60px);
+  }
+   */

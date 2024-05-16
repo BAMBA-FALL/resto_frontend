@@ -1,0 +1,46 @@
+/* user.css */
+
+.table-container {
+  overflow-x: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.responsive-table th,
+.responsive-table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.responsive-table th {
+  background-color: #f2f2f2;
+}
+
+.responsive-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.responsive-table tr:hover {
+  background-color: #ddd;
+}
+
+.action-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.btn-suspendre {
+  color: orange;
+}
+
+.btn-supprimer {
+  color: red;
+}

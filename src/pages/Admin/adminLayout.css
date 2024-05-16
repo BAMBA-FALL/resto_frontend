@@ -1,0 +1,21 @@
+.adminGrid {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    grid-template-rows: auto 1fr; 
+    background-color: green;
+    height: 100%;
+  }
+  
+  .adminSideMenu {
+    grid-column: 1; 
+    grid-row: 2; 
+    background-color: #e4cece; 
+    /* height: calc(100vh - 60px); */
+  }
+  
+  .adminContent {
+    grid-column: 2; 
+    grid-row: 2; 
+    overflow-y: auto; 
+  }
+  
