@@ -40,16 +40,16 @@ const ProductList = () => {
           <img className='product-image' src={`http://localhost:4000/uploads/${product.images[0]}`} alt={product.title} />
           <div className="product-details">
             <h3 className='product-item'>{product.title}</h3>
-            <p className='product-item'>Description: {product.description}</p>
-            <p className='product-item'>Prix: {product.price} €</p>
-            <div className="button-containerr">
+            <p className='product-item'> {product.description}</p>
+            <h3 className='product-item'>Prix: {product.price} €</h3>
+            {/* <div className="button-containerr">
             <button className='views-button'>
-            <FontAwesomeIcon icon={faEye} /> {/* Utilisation de l'icône d'œil */}
+            <FontAwesomeIcon icon={faEye} /> 
         </button>
                  <button className='deletes-button' >
-            <FontAwesomeIcon icon={faTrashAlt} /> {/* Utilisation de l'icône de poubelle */}
+            <FontAwesomeIcon icon={faTrashAlt} /> 
         </button>
-          </div>
+          </div> */}
             </div>
          
         </Link>

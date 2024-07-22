@@ -89,7 +89,7 @@ const ProductDetails = () => {
         <p className='product-description'>{product.description}</p>
         {/* <p>Couleur : {product.color}</p>
         <p>Autres couleurs disponibles:</p> */}
-        {/* <div className="color-buttons">
+        <div className="color-buttons">
           {product.colors.map((color, index) => (
             <div className='carre-bouton'>
             <button
@@ -100,25 +100,25 @@ const ProductDetails = () => {
             />
             </div>
           ))}
-        </div> */}
-        <p className='product-price'>Table {product.price} €</p>
+        </div> 
+        <p className='product-price'>Prix {product.price} €</p>
         <p>{product.type}</p>
-        {/* <p className="capacity-label">Capacité:</p> */}
-        {/* <div className='storagelist'>
+        <p className="capacity-label">Capacité:</p> 
+         <div className='storagelist'>
           {product.storageCapacity.map((capacity, index) => (
             <div key={index} className='storageCapacity'>
               {formatStorageCapacity(capacity)}
             </div>
           ))}
-        </div> */}
-        <button className='buttonClass' onClick={handleAddToCart}>Réserver une table </button>
+        </div>
+        <button className='buttonClass' onClick={handleAddToCart}>Ajouter au panier </button>
         {/* Affichage du champ de saisie de date */}
-        {reservationDate && (
+        {/* {reservationDate && (
           <div>
             <label htmlFor="reservationDate">Date de réservation :</label>
             <input type="date" id="reservationDate" value={reservationDate} onChange={(e) => setReservationDate(e.target.value)} />
           </div>
-        )}
+        )} */}
       </div>
       {error && <div>{error}</div>}
     </div>

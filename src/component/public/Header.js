@@ -49,7 +49,7 @@ const Header = () => {
                     </div>
                     <ul className={menuOpen ? "menu-list open" : "menu-list"}>
                         <li>
-                            <Link to='/home' onClick={() => setMenuOpen(false)}>Resto</Link>
+                            <Link to='/home' onClick={() => setMenuOpen(false)}>CALLWAYZ</Link>
                         </li>
                         <div className="search-bar">
                             <input

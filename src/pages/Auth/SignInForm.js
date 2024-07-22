@@ -49,11 +49,11 @@ const SignInForm = () => {
     return (
         <div className="form-container-signup">
             <form onSubmit={handleSubmit}>
-                {/* <label className="form-label">Nom d'utilisateur</label>
+                <label className="form-label">Nom d'utilisateur</label>
                 <input className="form-input" name="username" placeholder="" onChange={handleChange} value={userData.username} />
 
                 <label className="form-label">Nom</label>
-                <input className="form-input" name="name" placeholder="" onChange={handleChange} value={userData.name} /> */}
+                <input className="form-input" name="name" placeholder="" onChange={handleChange} value={userData.name} />
 
                 <label className="form-label">Email</label>
                 <input className="form-input" name="email" placeholder="" onChange={handleChange} value={userData.email} />

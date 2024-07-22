@@ -62,9 +62,8 @@
 }
 
 .product-card {
-  width: calc(45% - 20px); /* Calcule la largeur en pourcentage pour que deux cartes s'affichent sur une ligne */
-  max-width: 600px; /* Augmente la largeur maximale de chaque carte */
-  height: 450px; /* Augmente la hauteur de chaque carte */
+  width: 250px; /* Largeur fixe de la carte */
+  height: 350px; /* Hauteur fixe de la carte */
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
@@ -72,11 +71,11 @@
   transition: 0.2s;
   background-color: #fff;
   box-shadow: 0px 0px 5px rgba(213, 207, 207, 0.1);
-  transition: box-shadow 0.2s ease;
   text-decoration: none;
-  color: inherit; 
+  color: inherit;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  align-items: center; /* Centre les éléments enfants horizontalement */
   justify-content: space-between;
 }
 
@@ -85,10 +84,14 @@
 }
 
 .product-image {
-  width: 100%; 
-  height: auto; 
-  border-radius: 5px; 
+  width: 80%; /* Réduit la largeur de l'image par rapport à la carte */
+  max-width: 200px; /* Limite la largeur maximale de l'image */
+  height: auto; /* Maintient le ratio de l'image */
+  border-radius: 5px;
+  margin-bottom: 15px; /* Espacement entre l'image et les détails du produit */
 }
+
+
 
 .product-details {
   padding: 10px;
